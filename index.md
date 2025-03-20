@@ -21,7 +21,7 @@
 ## 表彰 / Awards
  - 令和5年度 日本大学生産工学部 第1種奨学生
 
-## 参加インターンシップ / Internships
+## インターンシップ / Internships
  - 株式会社kubell（2025.03.28 - 30）
 
 ## 課外活動 / Student Projects

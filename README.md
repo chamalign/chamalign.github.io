@@ -27,4 +27,4 @@
  - 株式会社GA technologies（2025.04.25 - 27）
 
 ## 課外活動 / Student Projects
- - 日本大学ビジネスプランコンテスト設立, 運営（2023.06 - ）
+ - 日本大学ビジネスプランコンテスト設立, 運営（2023.06 - ）, **[Link](https://sites.google.com/view/nichidai-bijikon/)

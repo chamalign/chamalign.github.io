@@ -23,8 +23,8 @@
  - 令和6年度 日本大学生産工学部 マネジメント工学科 優等賞
 
 ## インターンシップ / Internships
- - 株式会社kubell（2025.03.28 - 30）
- - 株式会社GA technologies（2025.04.25 - 27）
+ - 株式会社kubell(2025.03.28 - 30)
+ - 株式会社GA technologies(2025.04.25 - 27)
 
 ## 課外活動 / Student Projects
- - 日本大学ビジネスプランコンテスト設立, 運営（2023.06 - ）, **[Link](https://sites.google.com/view/nichidai-bijikon/)**
+ - 日本大学ビジネスプランコンテスト設立, 運営(2023.06 - ), **[Link](https://sites.google.com/view/nichidai-bijikon/)**

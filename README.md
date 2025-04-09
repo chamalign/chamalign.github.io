@@ -24,9 +24,13 @@
  - 令和6年度 日本大学生産工学部 マネジメント工学科 優等賞（学科5名）
  - 令和6年度 日本大学生産工学部 マネジメント工学科 校友会賞（学科10名程度）
 
-## インターンシップ（選考有） / Internships
+## インターンシップ（インターンのための選考有） / Internships
  - 株式会社kubell(2025.03.28 - 30)
+ - AnyMind Group(2025.04.23)
  - 株式会社GA technologies(2025.04.25 - 27)
+ - 株式会社Speee(2025.05.24)
+ - Visional(2025.06.22 - 24)
+ - 株式会社LayerX(2025.06.13 - 15)
 
 ## 課外活動 / Student Projects
  - 日本大学ビジネスプランコンテスト設立, 運営(2023.06 - ), **[Link](https://sites.google.com/view/nichidai-bijikon/)**

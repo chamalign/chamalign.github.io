@@ -30,8 +30,9 @@
  - 株式会社GA technologies(2025.04.25 - 27)
  - 株式会社Speee(2025.05.24)
  - 合同会社DMM.com(2025.05.31 - 06.01)
- - Visional(2025.06.22 - 24)
  - 株式会社LayerX(2025.06.13 - 15)
+ - Visional(2025.06.22 - 24)
+
 
 ## 課外活動 / Student Projects
  - 日本大学ビジネスプランコンテスト設立, 運営(2023.06 - ), **[Link](https://sites.google.com/view/nichidai-bijikon/)**

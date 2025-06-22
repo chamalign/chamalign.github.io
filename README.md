@@ -14,7 +14,7 @@
    合成加速度の分散特徴量による怒鳴り行動の検出, 
    電子情報通信学会, 2024.02.09, 
    **[Link](https://www.ieice.org/publications/ken/summary.php?contribution_id=129399&society_cd=ISS&ken_id=SWIM&year=2024&presen_date=2024-02-16&schedule_id=8085&lang=jp&expandable=3)**
-1. **佐々木響也**, 大前佑斗,
+1. **佐々木響也**, [大前佑斗](http://int-info.com/),
    アンサンブルニューラルネットワークによるサロゲート最適化:中間層のユニット数と探索パフォーマンスの関係, 
    電子情報通信学会総合大会2025, 2025.03.26, **[Link](https://www.ieice.org/jpn_r/activities/taikai/general/2025/assets/pdf/Program_2025G.pdf#page=108)**
 

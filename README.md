@@ -9,6 +9,8 @@
  - 日本大学大学院 生産工学研究科 マネジメント工学専攻（2025.04 - ）
 
 ## 学会 / Conference
+### 国際学会 / International Conference
+
 ### 国内学会 / Domestic Conference
 1. 山岡政利, **佐々木響也**, [大前佑斗](http://int-info.com/), 
    合成加速度の分散特徴量による怒鳴り行動の検出, 
@@ -17,6 +19,7 @@
 1. **佐々木響也**, [大前佑斗](http://int-info.com/),
    アンサンブルニューラルネットワークによるサロゲート最適化:中間層のユニット数と探索パフォーマンスの関係, 
    電子情報通信学会総合大会2025, 2025.03.26, **[Link](https://www.ieice.org/jpn_r/activities/taikai/general/2025/assets/pdf/Program_2025G.pdf#page=108)**
+
 
 ## 表彰 / Awards
  - 令和5年度 日本大学生産工学部 第1種奨学生（学科1名）

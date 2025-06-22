@@ -39,4 +39,5 @@
 
 
 ## 課外活動 / Student Projects
+ - 経営戦略研究会(学部の起業サークル)設立, 運営(2021.07 - 2023.10)
  - 日本大学ビジネスプランコンテスト設立, 運営(2023.06 - ), **[Link](https://sites.google.com/view/nichidai-bijikon/)**

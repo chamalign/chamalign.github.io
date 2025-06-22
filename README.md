@@ -1,4 +1,4 @@
-## Profile
+## プロフィール / Profile
 佐々木 響也 / Kyoya Sasaki
  - **Mail** : kyoya.sasaki2027[at]gmail.com
  - **GitHub** : [@chamalign](https://github.com/chamalign)

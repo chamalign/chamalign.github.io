@@ -107,7 +107,7 @@
 
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin-bottom: 20px;
         }
@@ -121,6 +121,8 @@
             border-radius: 12px;
             border-left: 4px solid #667eea;
             transition: all 0.3s ease;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         .contact-item:hover {
@@ -131,7 +133,8 @@
         .contact-item strong {
             color: #2c3e50;
             font-weight: 600;
-            min-width: 60px;
+            min-width: 70px;
+            flex-shrink: 0;
         }
 
         .contact-item a {
@@ -139,6 +142,8 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            word-break: break-all;
+            flex: 1;
         }
 
         .contact-item a:hover {
@@ -294,6 +299,18 @@
 
             .contact-item {
                 padding: 12px 15px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .contact-item strong {
+                min-width: auto;
+            }
+
+            .contact-item a {
+                width: 100%;
+                word-break: break-all;
             }
 
             .education-item, .award-item, .internship-item, .activity-item {
@@ -340,6 +357,11 @@
 
             .contact-item strong {
                 min-width: auto;
+            }
+
+            .contact-item a {
+                width: 100%;
+                word-break: break-all;
             }
         }
 

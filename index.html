@@ -123,7 +123,8 @@
             transition: all 0.3s ease;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
         }
 
         .contact-item:hover {
@@ -138,17 +139,11 @@
             flex-shrink: 0;
         }
 
-        .contact-item a {
+        .contact-item span {
             color: #667eea;
-            text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
             word-break: break-all;
             flex: 1;
-        }
-
-        .contact-item a:hover {
-            color: #764ba2;
         }
 
         .education-item, .award-item, .internship-item {
@@ -159,11 +154,6 @@
             border-left: 4px solid #667eea;
             position: relative;
             transition: all 0.3s ease;
-        }
-
-        .education-item:hover, .award-item:hover, .internship-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .education-item::before, .award-item::before, .internship-item::before {
@@ -183,7 +173,9 @@
             border-left: 4px solid #667eea;
             position: relative;
             transition: all 0.3s ease;
-            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .activity-item:hover {
@@ -200,23 +192,15 @@
             top: 18px;
         }
 
-        .activity-item a {
+        .activity-item .link-badge {
             color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
             margin-left: 10px;
             padding: 4px 12px;
             background: white;
             border-radius: 6px;
             border: 1px solid #667eea;
             font-size: 0.9em;
-            transition: all 0.3s ease;
             display: inline-block;
-        }
-
-        .activity-item a:hover {
-            background: #667eea;
-            color: white;
         }
 
         .conference-item {
@@ -227,11 +211,6 @@
             border-left: 6px solid #667eea;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
-        }
-
-        .conference-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
 
         .conference-item strong {
@@ -335,7 +314,7 @@
                 min-width: auto;
             }
 
-            .contact-item a {
+            .contact-item span {
                 width: 100%;
                 word-break: break-all;
             }
@@ -386,7 +365,7 @@
                 min-width: auto;
             }
 
-            .contact-item a {
+            .contact-item span {
                 width: 100%;
                 word-break: break-all;
             }
@@ -503,7 +482,7 @@
                     経営戦略研究会(学部の起業サークル)設立, 運営 (2021.07 - 2023.10)
                 </div>
                 <a href="https://sites.google.com/view/nichidai-bijikon/" target="_blank" class="activity-item">
-                    日本大学ビジネスプランコンテスト設立, 運営 (2023.06 - ) <span style="color: #667eea; margin-left: 10px; padding: 4px 12px; background: white; border-radius: 6px; border: 1px solid #667eea; font-size: 0.9em;">Link</span>
+                    日本大学ビジネスプランコンテスト設立, 運営 (2023.06 - ) <span class="link-badge">Link</span>
                 </a>
             </div>
         </div>

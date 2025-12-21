@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佐々木 響也 - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-sub: #666666;
+            --border-color: #eeeeee;
+            --accent-color: #000000;
+            --container-width: 640px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            padding: 80px 24px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            border-radius: 8px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 6px;
+            object-fit: cover;
+            display: block;
+            flex-shrink: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-sub);
+            font-weight: 400;
+        }
+
+        /* Links Section (Bio-style) */
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 80px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: var(--text-main);
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .link-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--accent-color);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .link-card:hover {
+            border-color: #ddd;
+            background: #fafafa;
+            transform: translateX(4px);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+        }
+
+        .link-card:hover::before {
+            opacity: 1;
+        }
+
+        .link-card span {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .link-card .link-label {
+            color: var(--text-sub);
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* Content Sections */
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--text-sub);
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background: #f0f0f0;
+            margin-left: 20px;
+        }
+
+        .subsection-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 20px;
+            margin-top: 32px;
+            padding-left: 12px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .entry {
+            margin-bottom: 32px;
+            padding-left: 14px;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .entry-meta {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .entry-link {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 2px;
+            transition: all 0.2s;
+        }
+
+        .entry-link:hover {
+            color: var(--text-sub);
+            border-color: var(--text-sub);
+        }
+
+        /* Compact List for Internships */
+        .compact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-left: 14px;
+        }
+
+        .tag {
+            font-size: 0.85rem;
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            color: #555;
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            background: #e8e8e8;
+            color: #000;
+        }
+
+        @media (max-width: 680px) {
+            body { padding: 40px 16px; }
+            .container { padding: 40px 24px; }
+        }
+
+        @media (max-width: 480px) {
+            .header { 
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            .avatar {
+                width: 100px;
+                height: 100px;
+            }
+            .header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img src="Sasaki_chama.jpg" alt="佐々木 響也" class="avatar">
+            <div class="header-content">
+                <h1>佐々木 響也</h1>
+                <p class="subtitle">Kyoya Sasaki</p>
+            </div>
+        </header>
+
+        <!-- Social Links -->
+        <div class="links-grid">
+            <a href="mailto:kyoya.sasaki2027@gmail.com" class="link-card">
+                <span>Mail</span>
+                <span class="link-label">Contact</span>
+            </a>
+            <a href="https://github.com/chamalign" target="_blank" class="link-card">
+                <span>GitHub</span>
+                <span class="link-label">@chamalign</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kyoya-sasaki-965489339" target="_blank" class="link-card">
+                <span>LinkedIn</span>
+                <span class="link-label">Profile</span>
+            </a>
+            <a href="https://nubiz2023.org/" target="_blank" class="link-card">
+                <span>日本大学ビジネスプランコンテスト</span>
+                <span class="link-label">Founder</span>
+            </a>
+        </div>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="entry">
+                <p class="entry-title">日本大学大学院 生産工学研究科</p>
+                <span class="entry-meta">マネジメント工学専攻 修士課程（2025.04 - ）</span>
+            </div>
+            <div class="entry">
+                <p class="entry-title">日本大学 生産工学部</p>
+                <span class="entry-meta">マネジメント工学科 学士（2021.04 - 2025.03）</span>
+            </div>
+        </section>
+
+        <!-- Conference -->
+        <section class="section">
+            <h2 class="section-title">Conference</h2>
+            
+            <h3 class="subsection-title">国際学会 / International Conference</h3>
+            <div class="entry">
+                <p class="entry-title">ENSEMBLE NEURAL NETWORK-BASED SURROGATE OPTIMIZATION WITH ADJUSTABLE LOGARITHMIC SEARCH WEIGHT IN AN UPPER CONFIDENCE BOUND</p>
+                <span class="entry-meta">Kyoya Sasaki, Yuto Omae, Jun Toyotani / International Conference on Innovative Computing, Information and Control, 2025.08.27</span>
+            </div>
+            
+            <h3 class="subsection-title">国内学会 / Domestic Conference</h3>
+            <div class="entry">
+                <p class="entry-title">アンサンブルニューラルネットワークによるサロゲート最適化:中間層のユニット数と探索パフォーマンスの関係</p>
+                <span class="entry-meta">佐々木響也, 大前佑斗 / 電子情報通信学会総合大会2025, 2025.03.26</span>
+                <a href="https://www.ieice.org/jpn_r/activities/taikai/general/2025/assets/pdf/Program_2025G.pdf#page=108" target="_blank" class="entry-link">View Details</a>
+            </div>
+            <div class="entry">
+                <p class="entry-title">合成加速度の分散特徴量による怒鳴り行動の検出</p>
+                <span class="entry-meta">山岡政利, 佐々木響也, 大前佑斗 / 電子情報通信学会, 2024.02.09</span>
+                <a href="https://www.ieice.org/publications/ken/summary.php?contribution_id=129399&society_cd=ISS&ken_id=SWIM&year=2024&presen_date=2024-02-16&schedule_id=8085&lang=jp&expandable=3" target="_blank" class="entry-link">View Details</a>
+            </div>
+            <div class="entry">
+                <p class="entry-title">外食産業におけるリピート行動を規定する要因の決定木分析：関東圏のラーメン店を例に</p>
+                <span class="entry-meta">佐々木響也, 森雅也, 大前佑斗, 豊谷純 / ライフインテリジェンスとオフィス情報システム研究会, 2025.07.18</span>
+            </div>
+            <div class="entry">
+                <p class="entry-title">関東圏ラーメン店における機械学習を用いたリピート顧客予測モデルの構築および性能比較</p>
+                <span class="entry-meta">佐々木響也, 森雅也, 大前佑斗, 豊谷純 / ファジィシステムシンポジウム, 2025.09.05</span>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section class="section">
+            <h2 class="section-title">Awards</h2>
+            <div class="entry">
+                <p class="entry-title">令和5年度 日本大学生産工学部 第1種奨学生（学科1名）</p>
+            </div>
+            <div class="entry">
+                <p class="entry-title">令和5年度 大前柿本ゼミナール ソフトウェア開発 1位</p>
+            </div>
+            <div class="entry">
+                <p class="entry-title">令和6年度 日本大学生産工学部 マネジメント工学科 優等賞（学科5名）</p>
+            </div>
+            <div class="entry">
+                <p class="entry-title">令和6年度 日本大学生産工学部 マネジメント工学科 校友会賞（学科10名程度）</p>
+            </div>
+        </section>
+
+        <!-- Scholarships -->
+        <section class="section">
+            <h2 class="section-title">Scholarships</h2>
+            <div class="entry">
+                <p class="entry-title">公益財団法人JPC奨学財団 奨学生（2025年度）</p>
+            </div>
+        </section>
+
+        <!-- Internships -->
+        <section class="section">
+            <h2 class="section-title">Internships (Selected)</h2>
+            <div class="compact-list">
+                <span class="tag">株式会社kubell</span>
+                <span class="tag">AnyMind Group</span>
+                <span class="tag">株式会社GA technologies</span>
+                <span class="tag">株式会社Leo Sophia Group</span>
+                <span class="tag">株式会社Speee</span>
+                <span class="tag">合同会社DMM.com</span>
+                <span class="tag">株式会社LayerX</span>
+                <span class="tag">Visional Group株式会社</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section">
+            <h2 class="section-title">Student Projects</h2>
+            <div class="entry">
+                <p class="entry-title">日本大学ビジネスプランコンテスト 設立・運営</p>
+                <span class="entry-meta">2023.06 - 現在</span>
+            </div>
+            <div class="entry">
+                <p class="entry-title">経営戦略研究会（起業サークル）設立・運営</p>
+                <span class="entry-meta">2021.07 - 2023.10</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+

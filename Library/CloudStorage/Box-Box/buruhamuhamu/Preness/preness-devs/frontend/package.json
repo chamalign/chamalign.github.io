@@ -1,0 +1,14 @@
+{
+  "name": "preness-frontend",
+  "version": "1.0.0",
+  "description": "Preness Frontend Application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
+

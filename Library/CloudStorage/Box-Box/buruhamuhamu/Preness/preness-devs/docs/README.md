@@ -1,10 +1,10 @@
 # Documentation
 
-## ディレクトリ構成
+## Directory Structure
 
-- `api/`: API仕様書（OpenAPI/Swagger）
-- `database/`: データベース設計
-- `architecture/`: アーキテクチャドキュメント
+- `api/`: API specifications (OpenAPI/Swagger)
+- `database/`: Database design
+- `architecture/`: Architecture documentation
 
-詳細な開発ドキュメントは `preness-backend/docs/development/` を参照してください。
+For detailed development documentation, refer to `preness-backend/docs/development/`.
 

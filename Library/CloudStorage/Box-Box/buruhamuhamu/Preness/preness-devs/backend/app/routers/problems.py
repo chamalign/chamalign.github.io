@@ -1,5 +1,5 @@
 """
 GET /api/problems
-問題取得API
+Problem retrieval API
 """
 

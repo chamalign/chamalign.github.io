@@ -1,5 +1,5 @@
 """
 POST /api/scoring
-スコアリングAPI
+Scoring API
 """
 

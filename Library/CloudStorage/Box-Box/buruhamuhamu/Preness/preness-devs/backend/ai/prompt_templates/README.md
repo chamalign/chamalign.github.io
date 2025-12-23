@@ -1,10 +1,10 @@
 # Prompt Templates
 
-14種類の問題タイプ用のプロンプトテンプレート
+Prompt templates for 14 problem types
 
-- `base_prompt.txt`: ベースプロンプト
-- `listening_prompt.txt`: Listening用
-- `reading_prompt.txt`: Reading用
-- `structurewriting_prompt.txt`: Structure & Written Expression用
-- その他の問題タイプ用プロンプト
+- `base_prompt.txt`: Base prompt
+- `listening_prompt.txt`: For Listening
+- `reading_prompt.txt`: For Reading
+- `structurewriting_prompt.txt`: For Structure & Written Expression
+- Other prompts for different problem types
 

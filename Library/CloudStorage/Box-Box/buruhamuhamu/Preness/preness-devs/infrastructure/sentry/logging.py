@@ -1,5 +1,4 @@
 """
 Error logging
-エラーロギング
 """
 

@@ -1,5 +1,4 @@
 """
 LLM client
-LLMクライアント
 """
 

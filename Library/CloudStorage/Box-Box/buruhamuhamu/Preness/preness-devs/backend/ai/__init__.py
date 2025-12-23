@@ -1,5 +1,5 @@
 """
-GPT API Related - Sasaki担当
-問題生成、スコアリング、評価ロジック
+GPT API Related - Sasaki
+Problem generation, scoring, and evaluation logic
 """
 
